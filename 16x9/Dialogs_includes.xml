@@ -1449,284 +1449,6 @@
 		</control>
 	</include>
 	
-	<include name="DiaOK">
-	
-		<control type="group">
-		<animation effect="fade" start="0" end="100" time="100" delay="100">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="100" delay="100">WindowClose</animation>
-	
-			<!-- Bloc 1 -->
-			<control type="group">
-				<left>$PARAM[DIAB1PosX]</left>
-				<top>$PARAM[DIAB1PosY]</top>
-				<height>356</height>
-				<width>636</width>
-				
-			</control>
-			
-			<!-- Bloc 2 -->
-			<control type="group">
-				<visible>!Window.IsVisible(10106)</visible>
-				<left>$PARAM[DIAB2PosX]</left>
-				<top>$PARAM[DIAB2PosY]</top>
-				<height>356</height>
-				<width>636</width>
-				
-				<!-- Heading -->
-				<control type="label" id="1">
-					<top>24</top>
-					<left>24</left>
-					<width>588</width>
-					<height>70</height>
-					<align>center</align>
-					<font>Font48</font>
-					<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
-				</control>
-
-				<!-- Details -->
-				<control type="textbox" id="9">
-					<top>100</top>
-					<left>24</left>
-					<width>588</width>
-					<height>120</height>
-					<align>center</align>
-					<font>Font27</font>
-					<autoscroll>False</autoscroll>
-					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-				</control>
-				
-				<!-- OK -->
-				<control type="button" id="10">
-					<top>262</top>
-					<left>218</left>
-					<width>200</width>
-					<height>60</height>
-					<label>186</label>
-					<font>Font27</font>
-					<align>center</align>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-				</control>
-				
-			</control>
-			
-			<!-- Bloc 3 -->
-			<control type="group">
-				<left>$PARAM[DIAB3PosX]</left>
-				<top>$PARAM[DIAB3PosY]</top>
-				<height>356</height>
-				<width>636</width>
-				
-			</control>
-		</control>
-	</include>
-	
-	<include name="DiaProgress">
-	
-		<control type="group">
-		<animation effect="fade" start="0" end="100" time="100" delay="100">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="100" delay="100">WindowClose</animation>
-	
-			<!-- Bloc 1 -->
-			<control type="group">
-				<left>$PARAM[DIAB1PosX]</left>
-				<top>$PARAM[DIAB1PosY]</top>
-				<height>356</height>
-				<width>636</width>
-				
-			</control>
-			
-			<!-- Bloc 2 -->
-			<control type="group">
-				<visible>!Window.IsVisible(10106)</visible>
-				<left>$PARAM[DIAB2PosX]</left>
-				<top>$PARAM[DIAB2PosY]</top>
-				<height>356</height>
-				<width>636</width>
-				
-				<!-- Heading -->
-				<control type="label" id="1">
-					<top>24</top>
-					<left>24</left>
-					<width>588</width>
-					<height>70</height>
-					<align>center</align>
-					<font>Font48</font>
-					<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
-				</control>
-
-				<!-- Details -->
-				<control type="textbox" id="9">
-					<top>100</top>
-					<left>24</left>
-					<width>588</width>
-					<height>120</height>
-					<align>center</align>
-					<font>Font27</font>
-					<autoscroll>False</autoscroll>
-					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-				</control>
-
-				<!-- Scroll -->
-				<control type="image">
-					<left>230</left>
-					<bottom>24</bottom>
-					<width>176</width>
-					<height>2</height>
-					<texture border="1,12,1,1" colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">common/white.png</texture>
-				</control>
-				<control type="image">
-					<left>230</left>
-					<bottom>24</bottom>
-					<width>24</width>
-					<height>2</height>
-					<texture border="1,12,1,1" colordiffuse="$INFO[Skin.String(Color.DIATitle)]">common/white.png</texture>
-					<animation effect="slide" start="0,0" end="152,0" time="800" loop="true" tween="cubic" easing="out" condition="true">Conditional</animation>
-				</control>
-
-				<!-- Cancel -->
-				<control type="button" id="10">
-					<top>262</top>
-					<left>218</left>
-					<width>200</width>
-					<height>60</height>
-					<label>186</label>
-					<font>Font27</font>
-					<align>center</align>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-				</control>
-				
-			</control>
-			
-			<!-- Bloc 3 -->
-			<control type="group">
-				<left>$PARAM[DIAB3PosX]</left>
-				<top>$PARAM[DIAB3PosY]</top>
-				<height>356</height>
-				<width>636</width>
-					
-			</control>
-		</control>
-	</include>
-	
-	<include name="DiaYesNo">
-	
-		<control type="group">
-		<animation effect="fade" start="0" end="100" time="100" delay="100">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="100" delay="100">WindowClose</animation>
-	
-			<!-- Bloc 1 -->
-			<control type="group">
-				<left>$PARAM[DIAB1PosX]</left>
-				<top>$PARAM[DIAB1PosY]</top>
-				
-				<control type="image">
-					<texture  colordiffuse="$INFO[Skin.String(Color.SBBg)]">common/white.png</texture>
-					<aspectratio aligny="center">stretch</aspectratio>
-					<visible>IsEmpty(Window(Home).Property(SidebarPos))</visible>
-				</control>
-				
-			</control>
-			
-			<!-- Bloc 2 -->
-			<control type="group">
-				<visible>!Window.IsVisible(10106)</visible>
-				<left>$PARAM[DIAB2PosX]</left>
-				<top>$PARAM[DIAB2PosY]</top>
-				<height>356</height>
-				<width>636</width>
-				
-				<!-- Heading -->
-				<control type="label" id="1">
-					<top>24</top>
-					<left>24</left>
-					<width>588</width>
-					<height>70</height>
-					<align>center</align>
-					<font>Font48</font>
-					<wrapmultiline>true</wrapmultiline>
-					<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
-				</control>
-
-				<!-- Details -->
-				<control type="textbox" id="9">
-					<top>120</top>
-					<left>24</left>
-					<width>588</width>
-					<height>120</height>
-					<align>center</align>
-					<font>Font27</font>
-					<autoscroll>False</autoscroll>
-					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-				</control>
-				
-				<!-- Button grouplist -->
-				<control type="grouplist" id="9000">
-					<left>24</left>
-					<top>262</top>
-					<width>588</width>
-					<height>70</height>
-					<itemgap>1</itemgap>
-					<align>center</align>
-					<orientation>horizontal</orientation>
-
-					<!-- YES -->
-					<control type="button" id="10">
-						<top>0</top>
-						<left>0</left>
-						<width>auto</width>
-						<height>60</height>
-						<label>186</label>
-						<font>Font27</font>
-						<align>center</align>
-						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-					</control>
-					
-					<!-- NO -->
-					<control type="button" id="11">
-						<top>0</top>
-						<left>0</left>
-						<width>auto</width>
-						<height>60</height>
-						<label>186</label>
-						<font>Font27</font>
-						<align>center</align>
-						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-					</control>
-					
-				</control>
-			</control>
-			
-			<!-- Bloc 3 -->
-			<control type="group">
-				<left>$PARAM[DIAB3PosX]</left>
-				<top>$PARAM[DIAB3PosY]</top>
-				<height>356</height>
-				<width>636</width>
-					
-			</control>
-		</control>
-	</include>
-	
 	<include name="DiaOSDSettings">
 	
 		<control type="group">
@@ -9948,6 +9670,124 @@
 		</control>
 	</include>
 
+	<include name="DiaConfirm">
+	
+		<control type="group">
+		<animation effect="fade" start="0" end="100" time="100" delay="100">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="100" delay="100">WindowClose</animation>
+	
+			<!-- Bloc 1 -->
+			<control type="group">
+				<left>$PARAM[DIAB1PosX]</left>
+				<top>$PARAM[DIAB1PosY]</top>
+				<height>356</height>
+				<width>636</width>
+				
+			</control>
+			
+			<!-- Bloc 2 -->
+			<control type="group">
+				<visible>!Window.IsVisible(10106)</visible>
+				<left>$PARAM[DIAB2PosX]</left>
+				<top>$PARAM[DIAB2PosY]</top>
+				<height>356</height>
+				<width>636</width>
+
+				<!-- Heading -->
+				<control type="label" id="1">
+					<top>24</top>
+					<left>24</left>
+					<width>588</width>
+					<height>70</height>
+					<align>center</align>
+					<font>Font48</font>
+					<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+				</control>
+
+				<!-- Details -->
+				<control type="textbox" id="9">
+					<top>100</top>
+					<left>24</left>
+					<width>588</width>
+					<height>120</height>
+					<align>center</align>
+					<font>Font27</font>
+					<autoscroll>False</autoscroll>
+					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+				</control>
+
+				<!-- Scroll -->
+				<control type="progress" id="20">
+					<left>230</left>
+					<bottom>24</bottom>
+					<width>176</width>
+					<height>2</height>
+					<texturebg border="1,12,1,1" colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">common/white.png</texturebg>
+					<lefttexture>-</lefttexture>
+					<midtexture border="1,12,1,1"  colordiffuse="$INFO[Skin.String(Color.DIATitle)]">common/white.png</midtexture>
+					<righttexture>-</righttexture>
+					<info>System.Progressbar</info>
+				</control>
+
+				<!-- Button grouplist -->
+				<control type="grouplist" id="9000">
+					<left>24</left>
+					<top>262</top>
+					<width>588</width>
+					<height>70</height>
+					<itemgap>1</itemgap>
+					<align>center</align>
+					<orientation>horizontal</orientation>
+
+					<!-- YES -->
+					<control type="button" id="10">
+						<top>0</top>
+						<left>0</left>
+						<width>auto</width>
+						<height>60</height>
+						<label>186</label>
+						<font>Font27</font>
+						<align>center</align>
+						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					</control>
+					
+					<!-- NO -->
+					<control type="button" id="11">
+						<top>0</top>
+						<left>0</left>
+						<width>auto</width>
+						<height>60</height>
+						<label>186</label>
+						<font>Font27</font>
+						<align>center</align>
+						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					</control>
+					
+				</control>
+				
+			</control>
+			
+			<!-- Bloc 3 -->
+			<control type="group">
+				<left>$PARAM[DIAB3PosX]</left>
+				<top>$PARAM[DIAB3PosY]</top>
+				<height>356</height>
+				<width>636</width>
+			
+			</control>
+		</control>
+	</include>
+
 	<include name="Model">
 	
 		<control type="group">
@@ -9982,6 +9822,7 @@
 			
 			</control>
 		</control>
+
 	</include>
 
 	<variable name="InfoDIATitle">
