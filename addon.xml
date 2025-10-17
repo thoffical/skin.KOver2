@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
-	id="skin.kover2"
+	id="skin.kover2.rv"
 	version="2.0.0"
-	name="KOver2"
+	name="KOver2 Revived"
 	provider-name="Jayz2K">
 	<requires>
-		<import addon="xbmc.gui" version="5.11.0"/>
-		<import addon="script.skinshortcuts" version="0.6.5" />
-		<import addon="script.skin.helper.service" version="1.0.40"/>
-		<import addon="service.skin.widgets" version="0.0.30"/>
+		<import addon="xbmc.gui" version="5.17.0"/>
+		<import addon="script.skinshortcuts" version="2.0.3" />
+		<import addon="script.skin.helper.service" version="1.0.43"/>
+		<import addon="service.skin.widgets" version="0.0.33.matrix.4"/>
 	</requires>
 	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1.00" debugging="false">
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
